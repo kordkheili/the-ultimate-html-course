@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <!-- method1 -->
+    <video
+      src="media/bunny.mp4"
+      poster="media/poster.jpg"
+      width="600"
+      height=""
+      controls
+      muted
+      loop
+    ></video>
+
+    <!-- method2 -->
+    <video poster="media/poster.jpg" width="600" height="" controls muted loop>
+      <source src="media/bunny.webm" type="video/webm" />
+      <source src="media/bunny.mp4" type="video/mp4" />
+      <source src="media/bunny.avi" type="video/avi" />
+      <p>متاسفانه مرورگر شما این فایل را پشتیبانی نمی‌کند.</p>
+    </video>
+  </body>
+</html>

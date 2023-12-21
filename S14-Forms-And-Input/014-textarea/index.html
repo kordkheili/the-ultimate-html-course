@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <h3>دیدگاهتان را بنویسید</h3>
+      <div>
+        <input type="text" placeholder="نام و نام خانوادگی" name="fullname" />
+      </div>
+      <br />
+      <div>
+        <input type="email" placeholder="ایمیل" name="email" />
+      </div>
+      <br />
+      <div>
+        <input type="url" placeholder="وب سایت" name="website" />
+      </div>
+      <br />
+      <div>
+        <textarea
+          rows="7"
+          cols="30"
+          name="comment"
+          placeholder="نظر خود را بنویسید..."
+          required
+          minlength="40"
+          maxlength="60"
+          disabled
+        ></textarea>
+      </div>
+      <br />
+      <div>
+        <button type="submit">فرستادن دیدگاه</button>
+      </div>
+    </form>
+  </body>
+</html>

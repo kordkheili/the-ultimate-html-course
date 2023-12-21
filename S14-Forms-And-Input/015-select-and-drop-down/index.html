@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <h3>دیدگاهتان را بنویسید</h3>
+      <div>
+        <input type="text" placeholder="نام و نام خانوادگی" name="fullname" />
+      </div>
+      <br />
+      <div>
+        <input type="email" placeholder="ایمیل" name="email" />
+      </div>
+      <br />
+      <div>
+        <input type="url" placeholder="وب سایت" name="website" />
+      </div>
+      <br />
+      <div>
+        <select name="province">
+          <option value="0" selected>انتخاب استان...</option>
+          <option value="1">تهران</option>
+          <option value="2">اصفهان</option>
+          <option value="3">اردبیل</option>
+          <option value="4">فارس</option>
+          <option value="5">خراسان رضوی</option>
+          <option value="6">گیلان</option>
+          <option value="7">مازندران</option>
+          <option value="8">گلستان</option>
+        </select>
+      </div>
+      <br />
+      <div>
+        <textarea
+          rows="7"
+          cols="30"
+          name="comment"
+          placeholder="نظر خود را بنویسید..."
+          required
+          minlength="40"
+          maxlength="60"
+          disabled
+        ></textarea>
+      </div>
+      <br />
+      <div>
+        <button type="submit">فرستادن دیدگاه</button>
+      </div>
+    </form>
+    <hr />
+    <div>
+      <select name="province[]" multiple>
+        <option value="0">انتخاب استان...</option>
+        <option value="1">تهران</option>
+        <option value="2" selected>اصفهان</option>
+        <option value="3">اردبیل</option>
+        <option value="4">فارس</option>
+        <option value="5" selected>خراسان رضوی</option>
+        <option value="6">گیلان</option>
+        <option value="7" selected>مازندران</option>
+        <option value="8">گلستان</option>
+      </select>
+    </div>
+  </body>
+</html>

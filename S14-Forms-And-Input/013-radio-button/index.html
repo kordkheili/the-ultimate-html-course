@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <h3>Registeration</h3>
+      <input id="yearly" type="checkbox" name="yearly" />
+      <label for="yearly">Pay annually, get 2 months free</label>
+      <hr />
+      <div>Payment method</div>
+      <div>
+        <input
+          id="visa"
+          type="radio"
+          name="payment_method"
+          value="visa"
+          checked
+        />
+        <label for="visa">Visa, Mastercard</label>
+        <img src="images/visa.svg" height="10" alt="" />
+      </div>
+      <div>
+        <input
+          id="unionpay"
+          type="radio"
+          name="payment_method"
+          value="unionpay"
+        />
+        <label for="unionpay">UnionPay</label>
+        <img src="images/union.svg" height="10" alt="" />
+      </div>
+      <div>
+        <input
+          id="method3"
+          type="radio"
+          name="payment_method"
+          value="method3"
+          disabled
+        />
+        <label for="method3">Method 3</label>
+      </div>
+      <hr />
+      <input type="email" name="email" placeholder="Email" />
+      <br />
+      <br />
+      <input
+        id="policy"
+        type="checkbox"
+        name="policy"
+        value="accepted"
+        checked
+        required
+      />
+      <label for="policy">I have read and I accept the Privacy policy</label>
+      <br />
+      <br />
+      <button type="submit">Continue</button>
+    </form>
+  </body>
+</html>

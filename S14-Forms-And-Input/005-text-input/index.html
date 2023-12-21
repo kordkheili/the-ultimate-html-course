@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <label for="username">Username :</label>
+      <input
+        id="username"
+        type="text"
+        name="username"
+        value=""
+        placeholder="enter username..."
+        required
+        autofocus
+      />
+      <br />
+      <br />
+      <label for="firstname">Firstname :</label>
+      <input
+        id="firstname"
+        type="text"
+        name="firstname"
+        placeholder="enter firstname..."
+        required
+        minlength="3"
+        maxlength="5"
+        value="alireza"
+        readonly
+        disabled
+      />
+      <br />
+      <br />
+      <label for="country_code">Country Code :</label>
+      <input
+        id="country_code"
+        type="text"
+        name="country_code"
+        pattern="[A-Za-z]{3}"
+      />
+      <br />
+      <br />
+      <label for="email">Email :</label>
+      <input id="email" type="text" name="email" required />
+      <br />
+      <br />
+      <button type="submit">submit</button>
+    </form>
+  </body>
+</html>
